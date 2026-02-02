@@ -1,0 +1,513 @@
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+.rubik-uniquifier {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+
+.box {
+    opacity: 0;
+    transform: translatey(40px);
+    animation-name: fadeInUp;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 0% entry 25%;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translatey(40px);
+
+    }
+    to {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    padding: 7px 30px;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: flex-end;
+    gap: 58px;
+    display: flex;
+    align-items: center;
+   
+
+
+}
+
+li a {
+    text-decoration: none;
+    font-size: 27px;
+     font-family: "Bangers", system-ui;
+     color: white;
+     
+}
+.giallo {
+    transition: scale 0.2s ease-in-out;
+}
+.giallo:hover {
+    text-decoration: underline;
+    color: yellow;
+    scale: calc(110%);
+    text-underline-offset: 7px;
+}
+
+.azzurro {
+    transition: scale 0.2s ease-in-out;
+}
+
+.azzurro:hover {
+    text-decoration: underline;
+    color:aqua;
+    scale:calc(110%);
+    text-underline-offset: 7px;
+    
+}
+
+.orange {
+    transition: scale 0.2s ease-in-out;
+}
+
+.orange:hover {
+    text-decoration: underline;
+    color:orange;
+    scale:calc(110%);
+    text-underline-offset: 7px;
+
+}
+
+.green {
+    transition: scale 0.2s ease-in-out;
+}
+
+.green:hover {
+    text-decoration: underline;
+    color:green;
+    scale:calc(110%);
+    text-underline-offset: 7px;
+
+}
+
+.fucsia {
+    transition: scale 0.2s ease-in-out;
+}
+
+.fucsia:hover {
+     text-decoration: underline;
+    color: #D0453E;
+    scale:calc(110%);
+    text-underline-offset: 7px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151515;
+    width: 100%;
+    height: 283px;
+}
+
+.hero div h1 {
+    color: #F1B80F;
+    font-size: 75px;
+    margin: 0;
+}
+
+.imitare {
+    width: 100%;
+    height: 1015px;
+    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imitare img {
+    width: 1686px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    opacity: 0.22;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+ 
+.imitare div {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+}
+.imitare h2 {
+    color: white;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    font-size: 55px;
+    margin-top: 98px;
+    
+}
+
+.imitare p {
+    width: 959px;
+    height: auto;
+    font-size: 40px;
+    margin: 0;
+    padding-left: 20px;
+   border-left: 1px solid white;
+
+}
+
+.fumetto {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    
+}
+
+.fumetto h2 {
+    color: white;
+    text-align: center;
+    font-size: 62px;
+    margin: 0;
+
+
+}
+
+.fumetto div {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 1px; 
+    color: white;
+    margin: 87px 83px;
+    
+}
+
+.fumetto div img {
+    width: 618px;
+    height: auto;
+}
+.paragrafo {
+     position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.fumetto div p {
+    width: 674px;
+    height: auto;
+    font-size: 36px;
+ 
+}
+
+.dylandog {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    
+}
+
+.dylandog h2 {
+    color: white;
+    text-align: center;
+    font-size: 62px;
+    margin: 0;
+}
+
+.dylandog div {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 80px; 
+    color: white;
+    margin: 87px 50px;
+    flex-direction: row-reverse;
+}
+
+.dylandog div img {
+    width: 618px;
+    height: auto;
+}
+
+.dylandog div p {
+    width: 570px;
+    height: auto;
+    font-size: 36px;
+    margin: 0;
+}
+
+.dylandog .paragrafo {
+    flex-direction: column;
+}
+
+.passato {
+    background-color: black;
+    width: 100%;
+    height: auto;
+      margin: 0;
+    
+    
+}
+
+.passato h2 {
+    color: white;
+    text-align: center;
+    font-size: 62px;
+    margin: 0;
+
+
+}
+
+.passato div {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    gap: 1px; 
+    color: white;
+    margin: 87px 83px;
+    
+}
+
+.passato div img {
+    width: 618px;
+    height: auto;
+}
+
+   
+    
+
+.passato div p {
+    width: 674px;
+    height: auto;
+    font-size: 36px;
+ 
+}
+
+footer {
+    height: 100px;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    list-style: none;
+    gap: 58px;
+    display: flex;
+   
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+   
+    header {
+        padding: 15px 20px;
+        justify-content: center;
+    }
+    
+    nav ul {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li a {
+        font-size: 22px;
+    }
+    
+   
+    .hero div {
+        height: 180px;
+    }
+    
+    .hero div h1 {
+        font-size: 45px;
+        padding: 0 20px;
+        text-align: center;
+    }
+    
+    
+    .imitare {
+        height: auto;
+        min-height: auto;
+        padding: 50px 20px;
+    }
+    
+    .imitare img {
+        width: 120%;
+        max-width: none;
+    }
+    
+    .imitare div {
+        gap: 60px;
+    }
+    
+    .imitare h2 {
+        font-size: 38px;
+        margin-top: 40px;
+        padding: 0 15px;
+    }
+    
+    .imitare p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 26px;
+        padding-left: 15px;
+    }
+    
+    
+    .fumetto {
+        padding: 50px 20px;
+    }
+    
+    .fumetto h2 {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+    
+    .fumetto div {
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 20px;
+    }
+    
+    .fumetto div img {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .fumetto div p {
+        width: 100%;
+        font-size: 24px;
+    }
+    
+   
+    .dylandog {
+        padding: 50px 20px;
+    }
+    
+    .dylandog h2 {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+    
+    .dylandog div {
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 20px;
+    }
+    
+    .dylandog div img {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .dylandog div p {
+        width: 100%;
+        font-size: 24px;
+    }
+    
+    
+    .passato {
+        padding: 50px 20px;
+    }
+    
+    .passato h2 {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+    
+    .passato div {
+        flex-direction: column;
+        gap: 30px;
+        margin: 50px 20px;
+    }
+    
+    .passato div img {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .passato div p {
+        width: 100%;
+        font-size: 24px;
+    }
+    
+    
+    footer {
+        height: auto;
+        min-height: 100px;
+        padding: 25px 20px;
+    }
+    
+    footer ul {
+        gap: 35px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    
+}
+
+
+
+
